@@ -103,7 +103,7 @@ img{
 } 
 
 /* For screens with a maximum width of 768px */
-@media (min-width: 376px) {
+@media (max-width: 768px) {
     .container{
         display: block;  
                   
