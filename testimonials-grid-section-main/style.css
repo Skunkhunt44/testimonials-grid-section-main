@@ -1,0 +1,117 @@
+:root{
+    --mv:hsl(263, 55%, 52%);
+    --vdgb: hsl(217, 19%, 35%);
+    --vdbb: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --fs-md: 13px;
+    --ff-barlow:'Barlow', sans-serif;
+    --rounded-full: 10px ;
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family:var(--ff-barlow) ;
+    padding: 100px;
+    background-color: azure;
+}
+
+.text-mv{color: var(--mv);}
+.text-vdgb{color: var(--vdgb);}
+.text-vdbb{color: var(--vdbb);}
+.text-white{color:var(--white)}
+
+.bg-mv{background-color: var(--mv);}
+.bg-vdgb{background-color: var(--vdgb);}
+.bg-vdbb{background-color: var(--vdbb);}
+.bg-white{background-color:var(--white)}
+
+.rounded-full{border-radius: var(--rounded-full);}
+
+.fs-md{font-size: var(--fs-md);}
+
+.profile{
+    display: flex;  
+    gap: 7px;
+    align-items: center;
+}
+.about{
+font-size: var(--fs-md);
+opacity: .7;
+}
+img{
+    border: 2px solid var(--mv);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.Verified{
+    opacity: .5;
+}
+.container{
+    display: grid;    
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 30px;
+ 
+   
+}
+
+.Daniel{
+    grid-column: 1/3;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+    position: relative;
+    z-index: 1000;
+    
+}
+.Jonathan{
+    grid-column:3/4;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+}
+.jean{
+  grid-column: 1/2;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  display: grid;
+  gap: 10px;
+}
+.Patrick{
+   grid-column: 2/4;
+   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 30px;
+   display: grid;
+   gap: 10px;
+}
+.kira{
+    grid-column: 4/5;
+    grid-row: 1/-1;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    display: grid;
+    gap: 10px;
+} 
+
+/* For screens with a maximum width of 768px */
+@media (min-width: 376px) {
+    .container{
+        display: block;  
+                  
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
+     
+       
+}
